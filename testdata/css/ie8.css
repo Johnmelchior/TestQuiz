@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+#quiz .row .last{ width:30%; margin-right:0; float:right; clear: none; position: relative; vertical-align:top;}
+#quiz .row .last2{ width:47%; margin-right:0; float:right; clear: none; position: relative; vertical-align:top;}
+#transition .trans1{ background-position:top;}
+#transition .trans1 .backwrap{ width:60%;background:none;}
+#transition .trans1 .backwrap .content{display:none;}
+#transition .trans1 .backwrap .ieimage{display:block; width:100%; min-height:400px}
+#transition .trans1 .backwrap .ieimage img{ width:100%;}
+#transition .trans2{ background-position:top;}
+#transition .trans2 .backwrap{ width:67%; background:none;}
+#transition .trans2 .backwrap .content{display:none;}
+#transition .trans2 .backwrap .ieimage{display:block; width:100%;min-height:400px}
+#transition .trans2 .backwrap .ieimage img{ width:100%;}
+#transition .trans3{ background-position:top;}
+#transition .trans3 .backwrap{ width:67%; background:none;}
+#transition .trans3 .backwrap .content{ display:none;}
+#transition .trans3 .backwrap .ieimage{ display:block; width:100%;min-height:400px}
+#transition .trans3 .backwrap .ieimage img{ width:100%;}
+#quiz .footlinks .links{ display:block; float:left; margin:inherit;  font-size:14px; width:39%; padding:0 0 0 2%;}
+#quiz .footlinks .links2{ width: 52%;}
+
+#quiz .map-right { padding:0; width:78%; padding-bottom:27px;}
+.css-map-container{ float:none; margin:auto;}
+.css-map{ left:-20px;}
+
+#quiz .download p{ width:62%;}

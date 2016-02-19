@@ -1,0 +1,275 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Roboto', sans-serif;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+.no-touchevents *:hover, *.hover, :focus, :active {
+	outline: 0 none;
+}
+body {
+	line-height: 1;
+	font-family: 'Roboto', sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 17px;
+	color: #fff;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+em {
+	font-style:italic;
+}
+strong {
+	font-weight: bold;
+}
+.clearfix {
+	clear:both;
+	display:block;
+	margin:0;
+	padding:0;
+	font-size:0;
+	line-height:0;
+}
+
+::selection {
+  background:#FB7901; color:#fff; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background:#FB7901; color:#fff; /* Gecko Browsers */
+}
+
+.wrapper{ max-width:1000px; margin:auto; float:none; display:block; padding-left:10px; padding-right:10px;}
+
+.head-bar{ width:100%; height:auto; min-height:60px; background-color:#3B3B3B; margin: 0 0 30px 0;}
+.head-bar .orange-end{height:60px; background-color:#FB7901; font-size:27px; font-weight:500; color:#fff; line-height:60px; text-align:center;}
+.head-bar .head-orange .arrow{ width:50px; height:60px; position:absolute; top:0; right:-19px;}
+.head-bar .head-orange .arrow img{ height:100%;}
+.head-bar .head-black{ width:auto; float:left; height:60px; font-size:15px; font-weight:normal; color:#fff; line-height:60px; text-indent:40px; }
+.head-bar .head-orange{ width:22%; float:left; height:60px; background-color:#FB7901; font-size:27px; font-weight:500; color:#fff; line-height:60px; text-indent:30px; position:relative;}
+.ques_2 .head-bar .head-orange {width:30%;}
+.ques_3 .head-bar .head-orange {width:38%;}
+.ques_4 .head-bar .head-orange {width:45%;}
+.ques_5 .head-bar .head-orange {width:50%;}
+.ques_6 .head-bar .head-orange {width:60%;}
+.ques_7 .head-bar .head-orange {width:70%;}
+.ques_8 .head-bar .head-orange {width:80%;}
+.ques_9 .head-bar .head-orange {width:85%;}
+.ques_10 .head-bar .head-orange {width:90%;}
+.ques_map .head-bar .head-orange {width:95%;}
+.wrap_result .head-bar .head-orange {width:100%; text-align:center;}
+
+#quiz{width:100%; height:auto; padding-bottom:25px; background-color:#fff; min-height:450px;display:none;}
+#quiz .question{ width:100%; height:auto; font-size:55px; line-height:60px; color:#222222; font-weight:300; }
+#quiz .row{ width:100%;}
+#quiz .row .options{width:32%; float:left; min-height:200px; margin-right:20px; margin-top:4%; cursor: pointer; clear: none; vertical-align:top; }
+#quiz .row .last{ margin-right:0; float:right; clear: none; position: relative; vertical-align:top;}
+
+
+#quiz .row .options .top{ width:100%; height:auto; position:relative; overflow: hidden;}
+#quiz .row .options .top img{ width:100%;  transition: all .2s ease-in-out;}
+#quiz .row .options .top .text{ min-width:40%; padding:10px 20px; background-image:url(../images/back.png); font-size:26px; font-weight:bold; color:#fff; line-height:25px; position:absolute; left:0; top:24px; z-index:2;}
+#quiz .row .options .top .hoverOverlay {display:none;
+	background: #1a1a1a;
+	background: rgb(251, 121, 1);
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+    background: rgba(251, 121, 1, 0.65); height: 100%;width: 100%;position: absolute;top:0; left:0;z-index:0;}
+#quiz .options .bottom{ width:90%; height:auto; background-color:#e3e3e3; padding:5%; font-size:19px; line-height:25px; color:#4E4E4E; font-weight:normal; min-height:89px;}
+
+.no-touchevents #quiz .row .options:hover .top img, #quiz .row .options .top img.hover{ transform: scale(1.1); }
+.no-touchevents #quiz .row .options:hover .top .text, #quiz .row .options .top .text.hover {background:#363636;}
+.no-touchevents #quiz .row .options:hover .hoverOverlay, #quiz .row .options .hoverOverlay.hover {display: block;}
+
+#quiz .clue{width:100%; min-height:96px; margin-top:20px; padding: 30px 0 0 0; border-top: 1px solid #cacaca;}
+#quiz .clue .icon{ vertical-align:top;}
+#quiz .clue .icon img{ width:50px;}
+#quiz .clue .content{ width:auto; padding:0 20px; font-size:16px; line-height:22px; color:#363636; vertical-align:top;}
+#quiz .clue .content span{ float:left; clear:both; display:block;  width:100%;}
+#quiz .clue .content strong{ font-weight:bold;}
+
+#foot-bar{ width:100%; min-height:50px; background-color:#404040;}
+#foot-bar .left{ float:left; width:auto; font-size:13px; line-height:50px; color:#B9B7B1; text-align:left; padding-left:30px;}
+#foot-bar .right{ float:right; width:auto; font-size:15px; font-weight:bold; line-height:50px; color:#fff; text-align:right; padding-right:30px;}
+
+.download_ebook{width: 800px; margin: 0 auto;}
+.download_btn{padding: 15px;}
+
+
+/*===============================  Welcome page style Starts Here   ===============================================*/
+#welcome{ width:100%; height:550px; background-color:#fff; min-height:100vh; background-image:url(../images/welcome_lg.jpg); background-repeat:no-repeat; background-position:top right; background-size:cover; position:relative;}
+#welcome .title-container {width:auto; float:left; margin-top:4%;}
+#welcome .title-container .title{ width:auto; float:left; padding:20px 40px; background-color:#3b3b3b; font-size:52px; font-weight:bold; line-height:40px; font-weight:bold; color:#fff; }
+#welcome .title-container .title .shoretel-icon{ width: 40px; margin-right:30px;  float:left;}
+#welcome .title-container .title .shoretel-icon img{ width: 100%;}
+#welcome .title-container .line2{ padding-left:112px; padding-top:0; padding-bottom:25px;}
+
+#welcome .build-title{ width:auto; padding:15px; background-image:url(../images/back.png); font-size:28px; line-height:40px; color:#fff; font-weight:bold; padding-left:110px; padding-right:35px; margin-top:20px; min-width:200px; float:left;}
+#welcome .challenge-link{ width:430px; max-width:700px; padding:21px 40px; background-color:#fb7901; color:#fff; line-height:27px; font-size:27px; font-weight:normal; text-align:left; display:block; text-decoration:none; position:absolute; right:5%; bottom:13%; border-radius:200px; }
+#welcome .challenge-link img{float:right; width:30px;}
+
+
+
+#welcome-foot-bar{ width:100%; min-height:45px; background-color:#404040; /*position:absolute;*/ bottom:0; left:0;}
+#welcome-foot-bar .left{ float:left; width:auto; font-size:13px; line-height:45px; color:#B9B7B1; text-align:left; padding-left:30px;}
+
+
+.orange-link{ width:154px; padding:15px 20px; background-color:#fb7901; color:#fff; line-height:27px; font-size:27px; font-weight:normal; text-align:left; display:block; text-decoration:none; position:absolute; right:3%; bottom:8%; border-radius:200px; }
+.orange-link img{ float:right; width:30px; }
+
+/*===============================  Welcome page style ends Here   ===============================================*/
+
+/*===============================  information page style Starts Here   ===============================================*/
+
+#quiz .information{width:47%; margin:1%; margin-top: 4%; display: inline-block; float: none; height: auto; vertical-align: top; }
+#quiz .information .header{ width: 100%; background-color: #363636; color: #fff; font-size: 18px; font-weight: bold; text-align: center; line-height: 30px; padding-top:10px; padding-bottom: 10px;}
+#quiz .information .option{ width: 100%;  text-align: center; line-height: 25px; margin-top: 5px}
+#quiz .information .option a{ display: block; background-color: #eee; padding-top:10px; text-decoration: none;  font-size: 15px; padding-bottom: 10px; color:#363636; }
+#quiz .information .option.selected a,
+.no-touchevents #quiz .information .option a:hover, #quiz .information .option a.hover{background-color: #FB7901; color: #fff}
+
+
+#quiz .row .options-two{width:48.5%; float:left; min-height:200px; margin-right:2.5%; margin-top:4%; cursor: pointer; }
+#quiz .row .last2{ margin-right:0; float:right; clear: none; position: relative; vertical-align:top;}
+#quiz .row .options-two .top{ width:100%; height:auto; position:relative; overflow: hidden;}
+#quiz .row .options-two .top img{ width:100%;  transition: all .2s ease-in-out;}
+.no-touchevents #quiz .row .options-two:hover .top img, #quiz .row .options-two .top img.hover{ transform: scale(1.1); }
+#quiz .row .options-two .top .text{ min-width:16%; padding:10px 20px; background-image:url(../images/back.png); font-size:42px; font-weight:bold; color:#fff; line-height:42px; position:absolute; left:0; top:24px; z-index:2}
+#quiz .options-two .bottom{ width:90%; height:auto; background-color:#e3e3e3; padding:5%; font-size:18px; line-height:22px; color:#4E4E4E; font-weight:normal; min-height:50px;}
+
+#quiz .row .options-two .top .hoverOverlay {display:none;
+	background: #1a1a1a;
+	background: rgb(251, 121, 1);
+	filter: alpha(opacity=80); /* For IE8 and earlier */
+    background: rgba(251, 121, 1, 0.65); height: 100%;width: 100%;position: absolute;top:0; left:0;z-index:0;}
+.no-touchevents #quiz .row .options-two:hover .top .text, #quiz .row .options-two .top .text.hover{background:#363636;}
+.no-touchevents #quiz .row .options-two:hover .hoverOverlay, #quiz .row .options-two .hoverOverlay.hover {display: block;}
+
+#quiz .row .meeting-head{ width: auto; padding:5px 10px; background-color:#3B3B3B; color: #fff; line-height: 27px; font-weight: bold;; font-size: 23px; margin-top: 5%; margin-bottom: 15px; display:inline-block;}
+#quiz .row .meeting-text{ width:98%; border: none; border: 1px solid #cfcfcf; min-height: 100px; background-color: #fff; color: #333; padding:1%; font-family: 'Roboto', sans-serif;
+}
+.meeting-but{background-color: #fb7901;
+    background-image: url("../images/link-arrow.png");
+    background-position: 111px center;
+    background-repeat: no-repeat;
+    background-size: 30px auto;
+    border: medium none;
+    border-radius: 200px;
+    bottom: 13%;
+    color: #fff;
+    display: block;
+    float: right;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 22px;
+    padding: 10px 15px;
+    text-align: left;
+    text-decoration: none;
+	margin-top:20px;
+    width: 153px;
+	font-family: 'Roboto', sans-serif;
+	 }
+
+
+
+.no-width{ width: 100%; max-width: 100%; height:100vh; margin:auto; float:none; display:block;}
+#quiz .trans1{ width: 100%; height: 100vh; position: absolute; top: 62px; background-image:url(../images/trans-image1.jpg); background-repeat: no-repeat; background-size:100%; }
+#quiz .trans2{ width: 100%; height: 100vh; position: absolute; top: 62px; background-image:url(../images/trans-image2.jpg); background-repeat: no-repeat; background-size:100%; }
+#quiz .trans2{ width: 100%; height: 100vh; position: absolute; top: 62px; background-image:url(../images/trans-image3.jpg); background-repeat: no-repeat; background-size:100%; }
+
+
+#transition{ width:100%;}
+#transition .transitionWrap {position: relative;width:100%; min-height: 550px;}
+#transition .backwrap {margin:auto; float:none; height:95%;background-repeat:no-repeat; background-size:100%; position: relative;}
+@media screen and (min-width:1022px) and (max-width:1200px){
+	#transition .backwrap { top:8%; height:79%;}
+}
+@media screen and (min-width:768px) and (max-width:1023px) {
+	#transition .backwrap { top:8%; height:70%;}
+}
+@media screen and (min-width:481px) and (max-width:767px) {
+	#transition .backwrap {}
+}
+
+#transition .trans1{ background-image:url(../images/transition-bg1.png); background-repeat:no-repeat; background-size:cover; padding-top:3%}
+#transition .trans1 .backwrap{ width:60%;background-image:url(../images/transition-chat1.png); }
+#transition .trans1 .backwrap .content{ width:40%; float:right; font-size:48px; font-size: 3.8vw; line-height:116%; color:#404040; text-align:center; font-weight:normal; font-style:italic; margin-right:10%; margin-top:14%;}
+
+#transition .trans1 .backwrap .ieimage{display:none;}
+#transition .trans2{ background-image:url(../images/transitionbg2.png); background-repeat:no-repeat; background-size:cover; padding-top:5%; background-position:center}
+#transition .trans2 .backwrap{ width:67%; background-image:url(../images/transition-chat2.png); }
+#transition .trans2 .backwrap .ieimage{display:none;}
+
+
+
+#transition .trans2 .backwrap .content{ width:47%; float:left; font-size:48px; font-size: 3.8vw; line-height:116%; color:#404040; text-align:center; font-weight:normal; font-style:italic; margin-left:9%; margin-top:7%;}
+
+#transition .trans3{ background-image:url(../images/transition-bg3.png); background-repeat:no-repeat; background-size:cover; padding-top:5%; background-position:center}
+#transition .trans3 .backwrap{ width:67%; background-image:url(../images/transition-chat3.png); }
+#transition .trans3 .backwrap .content{ width:48%; float:left; font-size:48px; font-size: 3.2vw; line-height:116%; color:#404040; text-align:center; font-weight:normal; font-style:italic; margin-left:7%; margin-top:4%;}
+
+#transition .trans3 .backwrap .ieimage{display:none;}
+
+#quiz .map-container{ width:100%; height:364px; margin-top: 40px; margin-bottom: 20px; }
+#quiz .map-left{ width:20%; float:left; background-color:#3B3B3B; color:#fff; font-size:27px; font-weight:bold; line-height:35px; text-align:center; min-height: 255px; padding-top: 109px; }
+#quiz .map-right{ width:68%; float:right; background: #f1f1f1; padding: 27px 28px 18px 45px; min-height: 321px; }
+#quiz .map-right img{ width:100%;}
+
+#quiz .asia{ background-color:#FF0000;}
+
+
+
+#quiz .congrats{ width:100%; height:auto; border-bottom:1px solid #cfcfcf; padding-bottom:3%;}
+#quiz .congrats .left{ width:20%; float:left;}
+#quiz .congrats .left img {width:100%; margin-left:15%;}
+#quiz .congrats .right{ width:72%; float:right; font-size:18px; line-height:24px; color:#404040; }
+#quiz .congrats .right h1{ font-size:54px; font-weight:400; color:#404040; line-height:58px; margin:0; padding:0; text-align:left; margin-top:4%;}
+#quiz .congrats .right h1 strong {font-weight:bold;}
+#quiz .congrats .right p{ margin-top:20px; margin-bottom:20px;}
+#quiz .congrats .right .share{ width:100%; margin-top:5%;}
+#quiz .congrats .right .share p{ width:auto; font-size:19px; font-weight:bold; line-height:25px; float:left; margin:0; margin-right:10px;  }
+#quiz .congrats .right .share .icon{ width:30px; height:30px; background-color:#9c9c9c; color:#fff; text-align:center; line-height:30px; font-size:17px; display:block; border-radius:50px; float:left; margin-left:5px; }
+#quiz .congrats .right .share .icon a{ color:#fff; display:block;}
+.no-touchevents #quiz .congrats .right .share .icon:hover, #quiz .congrats .right .share .icon.hover{ background-color:#FB7901;}
+
+#quiz .download{ width:100%; height:auto; padding-top:20px; padding-bottom:20px; border-bottom:1px solid #cfcfcf; font-size:18px; line-height:25px; color:#4e4e4e;}
+#quiz .download p{ width:70%; float:left;}
+#quiz .download p strong{ font-weight:bold;}
+#quiz .download a.download_btn,
+#quiz .download input.download_btn{ min-width:200px; float:right; padding-top:10px; padding-bottom:10px; background-color:#adc94a; font-size:20px; line-height:20px; color:#fff; text-align:center; border-radius:50px; text-decoration:none; margin:5px; border: none; -webkit-appearance: none; cursor: pointer !important; }
+
+#quiz .download .icon{ width:39px;; margin-left:0; margin-right:35px; float:left;}
+#quiz .footlinks{ width:100%; padding-top:30px; padding-bottom:10px;}
+#quiz .footlinks .links{ width:auto; float:left; padding:9px 2% 0 2%; display:block; text-decoration:none; font-size:17px; color:#4e4e4e; line-height:25px; }
+#quiz .footlinks a.links:first-child {padding: 0 10px 0 0;}
+#quiz .footlinks .links strong { font-weight:bold; color:#0096db;}
+#quiz .footlinks .links span{ width:30px; height:30px; float:right; display:block; color:#fff; line-height:30px; text-align:center; font-size:16px; margin-left:15px; background-color:#0096db; border-radius:50px;}
+
+/* Option demographic select option */
+#quiz .information .option_selected a{
+	background-color: #FB7901 !important;
+	color:#fff;
+}
+
+.fa{
+	line-height: inherit !important;
+}
+
+.drop-box{ width:98%; height:auto; padding:5px 0; border:1px solid #cfcfcf; border-radius:3px; margin-bottom:20px;}
